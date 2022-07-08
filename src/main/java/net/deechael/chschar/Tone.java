@@ -18,4 +18,18 @@ public enum Tone {
         return id;
     }
 
+    public static Tone valueOf(int id) {
+        switch (id) {
+            case 1:
+                return LEVEL;
+            case 2:
+                return RISING;
+            case 3:
+                return FALLING_RISING;
+            case 4:
+                return FALLING;
+        }
+        return SOFT;
+    }
+
 }

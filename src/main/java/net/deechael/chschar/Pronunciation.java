@@ -31,6 +31,10 @@ public final class Pronunciation {
         return this.phoneticization.getName(this.tone);
     }
 
+    public String getPhoneticizationStringWithToneAndV() {
+        return this.phoneticization.getNameWithV(this.tone);
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
