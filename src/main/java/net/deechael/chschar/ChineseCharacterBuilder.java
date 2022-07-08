@@ -17,6 +17,9 @@ class ChineseCharacterBuilder {
         return this;
     }
 
+    ChineseCharacter build() {
+        return this.character;
+    }
 
     static ChineseCharacterBuilder builder() {
         return new ChineseCharacterBuilder();
