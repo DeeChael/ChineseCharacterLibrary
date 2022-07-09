@@ -2,8 +2,28 @@
 ## Get the pronounciation and tone of a Chinese character!
 
 ---
-### How to use?
+## How to use?
 
+### Added ChineseCharacterLibrary as dependency
+**Maven**
+```xml
+<dependency>
+    <groupId>net.deechael</groupId>
+    <artifactId>chschar</artifactId>
+    <version>1.00.0</version>
+</dependency>
+```
+
+**Gradle**
+```groovy
+dependencies {
+    //...
+    implementation 'net.deechael:chschar:1.00.0'
+}
+```
+
+### Using the library
+**Java**
 ```java
 import net.deechael.chschar.ChineseCharacter;
 import net.deechael.chschar.ChineseCharacterLibrary;
