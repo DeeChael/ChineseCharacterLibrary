@@ -1,5 +1,7 @@
 package net.deechael.chschar;
 
+import com.sun.istack.internal.NotNull;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -82,6 +84,7 @@ public final class ChineseCharacterLibrary {
         characters.put('㐋', ChineseCharacterBuilder.builder().initialize('㐋').pronunciation(Phoneticization.TU, Tone.FALLING_RISING).build());
     }
 
+    @NotNull
     public static ChineseCharacter get(char c) {
         if (!characters.containsKey(c)) {
             throw new RuntimeException("Character \"" + c + "\" is not a Chinese character");
