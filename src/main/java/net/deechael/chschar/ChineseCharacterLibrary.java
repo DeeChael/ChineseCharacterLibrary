@@ -93,6 +93,10 @@ public final class ChineseCharacterLibrary {
         return characters.containsKey(c);
     }
 
+    public static int getSupported() {
+        return characters.size();
+    }
+
     private ChineseCharacterLibrary() {}
 
 }
